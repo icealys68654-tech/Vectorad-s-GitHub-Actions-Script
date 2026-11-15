@@ -1,3 +1,4 @@
+Do
 # Vectorad-s-GitHub-Actions-Script*Calloc( &Best Practices to Avoid Conflicts)
 Pull Before Push: Always pull (fetch and merge) the latest changes from the remote repo before making or pushing your own changes, regardless of the tool.
 Use Feature Branches: Work on separate branches for different features or bug fixes, then merge them back to main/master with pull requests.
@@ -20,4 +21,10 @@ README.md — Status to Completion
 Continue...
 
 Delegate GitHub Actions to simulating all real CI gates if status is green
+
+While(Small, Frequent Commits)
+
+By default, the built-in GitHub MCP server in Copilot CLI restricts write operations unless you override the toolset flags.
+• Enable all read-write tools. Start your CLI session with copilot --enable-all-github-mcp-tools or use --add-github-mcp-tool "*" to expose write-capable PR and issue tools.
+• Check your token permissions. Ensure the underlying Personal Access Token (PAT) or GitHub App credential has pull_requests: write and contents: write scopes.
 
